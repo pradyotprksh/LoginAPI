@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginAPI</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_data_error">Enter all the data</string>
+    <string name="loading_data">.....</string>
+</resources>
