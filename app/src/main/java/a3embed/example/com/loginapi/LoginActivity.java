@@ -15,12 +15,12 @@ import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginPresente
 import a3embed.example.com.loginapi.Authentication.Login.View.LoginInterface;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity implements LoginInterface {
 
     @BindView(R.id.phoneEt) EditText phoneEt;                                                       // Phone number et
     @BindView(R.id.passwordEt) EditText passwordEt;                                                 // Password Et
-    @BindView(R.id.signInB) Button signInB;                                                         // Sign in button
     @BindView(R.id.apiResponse) TextView apiResponse;                                               // Api response text view
 
     private LoginIPresenter loginIPresenter;                                                        // Login Presenter interface
@@ -36,17 +36,10 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface {
         loginIPresenter = new LoginPresenter(this);
 
         apiResponse.setMovementMethod(new ScrollingMovementMethod());
-
-        signInB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getValue();
-            }
-        });
     }
 
-    private void getValue() {
-
+    @OnClick(R.id.signInB)
+    void getValue() {
         if (TextUtils.isEmpty(phoneEt.getText().toString()) || TextUtils.isEmpty(passwordEt.getText().toString())) {
             apiResponse.setText(getString(R.string.enter_data_error));
         } else {
