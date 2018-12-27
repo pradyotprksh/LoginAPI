@@ -1,6 +1,6 @@
 package a3embed.example.com.loginapi.Authentication.Login.Networking;
 
-import a3embed.example.com.loginapi.Authentication.Login.Model.LoginDataModelRetro;
+import a3embed.example.com.loginapi.Authentication.Login.POJOs.LoginDataModelRetro;
 import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;

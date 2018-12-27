@@ -1,8 +1,8 @@
 package a3embed.example.com.loginapi.Authentication.Login.Presenter;
 
-import a3embed.example.com.loginapi.Authentication.Login.Model.LoginDataModelRetro;
+import a3embed.example.com.loginapi.Authentication.Login.POJOs.LoginDataModelRetro;
 import a3embed.example.com.loginapi.Authentication.Login.Model.LoginModelSend;
-import a3embed.example.com.loginapi.Authentication.Login.Model.LoginSuccessDataModel;
+import a3embed.example.com.loginapi.Authentication.Login.POJOs.LoginSuccessDataModel;
 import a3embed.example.com.loginapi.Authentication.Login.Networking.ApiUtils;
 import a3embed.example.com.loginapi.Authentication.Login.Networking.RetroEndPoints;
 import a3embed.example.com.loginapi.Authentication.Login.View.LoginInterface;
