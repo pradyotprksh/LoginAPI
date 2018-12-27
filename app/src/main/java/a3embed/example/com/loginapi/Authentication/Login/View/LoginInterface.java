@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.View;
+package a3embed.example.com.loginapi.Authentication.Login.View;
 
 public interface LoginInterface {
 

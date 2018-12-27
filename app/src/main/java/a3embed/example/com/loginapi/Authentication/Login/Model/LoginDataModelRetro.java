@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Model;
+package a3embed.example.com.loginapi.Authentication.Login.Model;
 
 import com.google.gson.annotations.SerializedName;
 

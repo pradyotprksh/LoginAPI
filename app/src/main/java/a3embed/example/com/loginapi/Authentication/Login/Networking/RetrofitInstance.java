@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Helper;
+package a3embed.example.com.loginapi.Authentication.Login.Networking;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -8,6 +8,10 @@ public class RetrofitInstance {
 
     private static Retrofit retrofit = null;                                            // Retrofit Variable
 
+    /**
+     * <h>getClient()</h>
+     * <p>Create a retrofit client</p>
+     * */
     public static Retrofit getClient(String baseUrl) {
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()

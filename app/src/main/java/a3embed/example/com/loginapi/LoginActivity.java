@@ -1,7 +1,6 @@
 package a3embed.example.com.loginapi;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,19 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import a3embed.example.com.loginapi.Model.LoginDataModelRetro;
-import a3embed.example.com.loginapi.Presenter.LoginIPresenter;
-import a3embed.example.com.loginapi.Presenter.LoginPresenter;
-import a3embed.example.com.loginapi.View.LoginInterface;
+import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginIPresenter;
+import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginPresenter;
+import a3embed.example.com.loginapi.Authentication.Login.View.LoginInterface;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 public class LoginActivity extends AppCompatActivity implements LoginInterface {
 

@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Presenter;
+package a3embed.example.com.loginapi.Authentication.Login.Presenter;
 
 public interface LoginIPresenter {
 

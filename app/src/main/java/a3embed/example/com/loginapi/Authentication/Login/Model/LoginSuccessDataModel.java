@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Model;
+package a3embed.example.com.loginapi.Authentication.Login.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -52,6 +52,11 @@ public class LoginSuccessDataModel {
         this.profilePic = profilePic;
         this.pushTopic = pushTopic;
     }
+
+    /**
+     * <h>Getter/Setter</h>
+     * <p>Get/Set the data</p>
+     * */
 
     public String getChn() {
         return chn;
