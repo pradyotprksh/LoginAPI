@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Authentication.Login.Networking;
+package a3embed.example.com.loginapi.Authentication.Networking;
 
 public class ApiUtils {
 

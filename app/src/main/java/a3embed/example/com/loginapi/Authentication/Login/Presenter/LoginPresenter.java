@@ -1,11 +1,11 @@
 package a3embed.example.com.loginapi.Authentication.Login.Presenter;
 
-import a3embed.example.com.loginapi.Authentication.Login.POJOs.LoginDataModelRetro;
+import a3embed.example.com.loginapi.Authentication.Login.LoginInterface;
 import a3embed.example.com.loginapi.Authentication.Login.Model.LoginModelSend;
-import a3embed.example.com.loginapi.Authentication.Login.POJOs.LoginSuccessDataModel;
-import a3embed.example.com.loginapi.Authentication.Login.Networking.ApiUtils;
-import a3embed.example.com.loginapi.Authentication.Login.Networking.RetroEndPoints;
-import a3embed.example.com.loginapi.Authentication.Login.View.LoginInterface;
+import a3embed.example.com.loginapi.Authentication.Networking.ApiUtils;
+import a3embed.example.com.loginapi.Authentication.Networking.RetroEndPoints;
+import a3embed.example.com.loginapi.Authentication.POJOs.LoginDataModelRetro;
+import a3embed.example.com.loginapi.Authentication.POJOs.LoginSuccessDataModel;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

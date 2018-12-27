@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Authentication.Login.Networking;
+package a3embed.example.com.loginapi.Authentication.Networking;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

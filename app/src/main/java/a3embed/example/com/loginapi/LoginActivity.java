@@ -5,14 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.ScrollingMovementMethod;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginIPresenter;
 import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginPresenter;
-import a3embed.example.com.loginapi.Authentication.Login.View.LoginInterface;
+import a3embed.example.com.loginapi.Authentication.Login.LoginInterface;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

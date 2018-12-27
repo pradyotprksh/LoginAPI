@@ -1,4 +1,4 @@
-package a3embed.example.com.loginapi.Authentication.Login.POJOs;
+package a3embed.example.com.loginapi.Authentication.POJOs;
 
 import com.google.gson.annotations.SerializedName;
 
