@@ -1,5 +1,7 @@
 package a3embed.example.com.loginapi.Authentication.Login.Presenter;
 
+import javax.inject.Inject;
+
 import a3embed.example.com.loginapi.Authentication.Login.LoginInterface;
 import a3embed.example.com.loginapi.Authentication.Login.Model.LoginModelSend;
 import a3embed.example.com.loginapi.Authentication.Networking.ApiUtils;
@@ -18,6 +20,7 @@ public class LoginPresenter implements LoginIPresenter {
     private LoginModelSend loginModelSend;                                                          // LoginModelSend variable
     private LoginInterface loginInterface;                                                          // Login Interface for the view
 
+    @Inject
     public LoginPresenter(LoginInterface loginInterface) {
         this.loginInterface = loginInterface;
     }

@@ -1,27 +1,29 @@
 package a3embed.example.com.loginapi;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import javax.inject.Inject;
+
 import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginIPresenter;
-import a3embed.example.com.loginapi.Authentication.Login.Presenter.LoginPresenter;
 import a3embed.example.com.loginapi.Authentication.Login.LoginInterface;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import dagger.android.support.DaggerAppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity implements LoginInterface {
+public class LoginActivity extends DaggerAppCompatActivity implements LoginInterface {
 
     @BindView(R.id.phoneEt) EditText phoneEt;                                                       // Phone number et
     @BindView(R.id.passwordEt) EditText passwordEt;                                                 // Password Et
     @BindView(R.id.apiResponse) TextView apiResponse;                                               // Api response text view
 
-    private LoginIPresenter loginIPresenter;                                                        // Login Presenter interface
+    @Inject
+    LoginIPresenter loginIPresenter;                                                                // Login Presenter interface
     private ProgressDialog progressDialog;                                                          // Progress dialog
 
     @Override
@@ -30,8 +32,6 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface {
         setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
-
-        loginIPresenter = new LoginPresenter(this);
 
         apiResponse.setMovementMethod(new ScrollingMovementMethod());
     }
@@ -56,6 +56,5 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface {
     public void dismissProgress() {
         progressDialog.dismiss();
     }
-
 
 }
